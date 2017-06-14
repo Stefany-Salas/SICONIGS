@@ -1,0 +1,95 @@
+<% include partials/head %>
+
+  <body>
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="jumbotron text-center">
+          
+          <hr>
+          <h1><span class="fa fa-file-text-o"></span> Eventos</h1>
+
+        <form action="/events" method="post">
+        <label class="col-sm-2 col-sm-push-0 control-label"></label>
+        <div class="form-group">
+            <hr>
+            <label>
+                Equipo
+            </label>
+        </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Tipo
+              </label>
+              <select style="width:300px" name="tipoeq" class="form-control">
+                  <option>Laptop</option>
+                  <option>Proyector</option>
+                  <option>Impresora</option>
+                  <option>Mesas</option>
+                  <option>Sillas</option>
+                  <option>Manteles</option>
+                  <option>Cubre sillas</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Cantidad
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="cantidad"
+                        id="inputCantidad"
+                        placeholder="Cantidad">              
+          </div>
+          
+          <div class="form-group">
+              <hr>
+              <label>
+                  Consumibles
+              </label>
+        </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Tipo
+              </label>
+              <select style="width:300px" name="tipocon" class="form-control">
+                  <option>Servilletas</option>
+                  <option>Botellas de agua</option>
+                  <option>Botellas de refresco</option>
+                  <option>Botellas de vino</option>
+                  <option>Vasos</option>
+                  <option>Platos</option>
+                  <option>Cubiertos</option>
+                  <option>Hielos</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Cantidad
+              </label>
+              <input style="width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="cantidad1"
+                        id="inputCantidad1"
+                        placeholder="Cantidad">              
+          </div>
+          <hr>
+          <div class="form-group">
+              <div class="col-sm-6 col-xs-10">
+                  <a href="/profile" class="btn btn-default"><span class="fa fa-times"></span> Cancelar</a>
+               </div>
+
+          <div class="form-group">
+              <div class="col-sm-6 col-xs-10">
+                  <a href="/profile" class="btn btn-default"><span class="fa fa-check"></span> Aceptar</a>
+               </div>
+          </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>

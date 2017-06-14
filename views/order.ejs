@@ -1,0 +1,360 @@
+<% include partials/head %>
+
+  <body>
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="jumbotron text-center">
+          
+          <hr>
+          <h1><span class="fa fa-pencil"></span> Pedido</h1>
+
+        <form action="/order" method="post">
+        <label class="col-sm-2 col-sm-push-0 control-label"></label>
+        <div class="form-group">
+            <hr>
+            <label >
+                Seleccione la cantidad de productos para realizar el pedido
+            </label>
+        </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Laptop
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="laptop"
+                        id="inputLaptop"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Proyector
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="proyector"
+                        id="inputProyector"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Impresora
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="imprsora"
+                        id="inputImpresora"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Mesas
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="mesa"
+                        id="inputMesa"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Sillas
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="silla"
+                        id="inputSilla"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Manteles
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="mantel"
+                        id="inputMantel"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Cubre sillas
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="cubre"
+                        id="inputCubre"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Servilletas
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="servilleta"
+                        id="inputServilleta"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Botella de agua
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="agua"
+                        id="inputAgua"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Botella de refresco
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="refresco"
+                        id="inputRefresco"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Botella de vino
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="vino"
+                        id="inputVino"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Vasos
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="vaso"
+                        id="inputVaso"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Platos
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="plato"
+                        id="inputPlato"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Cubiertos
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="cubierto"
+                        id="inputCubierto"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Hielos
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="hielo"
+                        id="inputHielo"
+                        placeholder="Cantidad">
+          </div>
+          
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Aromatizante
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="aroma"
+                        id="inputAroma"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Trapo
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="trapo"
+                        id="inputTrapo"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Cubeta
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="cubeta"
+                        id="inputCubeta"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Escoba
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="escoba"
+                        id="inputEscoba"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Trapeador
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="trapeador"
+                        id="inputTrapeador"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Cinta adhesiva
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="cinta"
+                        id="inputCinta"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Tijeras
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="tijera"
+                        id="inputTijera"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Globos
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="globo"
+                        id="inputGlobo"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-sm-4 control-label">
+                  Hojas blancas
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="blancas"
+                        id="inputBlancas"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-lg-4 control-label">
+                  Hojas colores
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="color"
+                        id="inputColor"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-lg-4 control-label">
+                  Plumas
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="pluma"
+                        id="inputPluma"
+                        placeholder="Cantidad">
+          </div>
+          <div class="form-group">
+              <hr>
+              <label class="col-lg-4 control-label">
+                  Folder
+              </label>
+              <input style=" width:300px"
+                        class="form-control" 
+                        type="number"
+                        name="folder"
+                        id="inputFolder"
+                        placeholder="Cantidad">
+          </div>
+          
+          
+          <hr>
+          <div class="form-group">
+              <div class="col-sm-6 col-xs-10">
+                  <a href="/manager" class="btn btn-default"><span class="fa fa-times"></span> Cancelar</a>
+               </div>
+
+          <div class="form-group">
+              <div class="col-sm-6 col-xs-10">
+                  <a href="/profile" class="btn btn-default"><span class="fa fa-check"></span> Aceptar</a>
+               </div>
+          </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<% include partials/head %>
+
+  <body>
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="jumbotron text-center">
+        <h1><span class="fa fa-sign-in"></span> Registrar</h1>
+
+        <% if (message != null) { %>
+          <div class="alert-danger"><%= message %></div>
+        <% } %>
+
+        <form action="/signup" method="post">
+          <div class="form-group">
+              <label>Ingrese su nombre de usuario:</label>
+              <input type="text" class="form-control" name="email">
+          </div>
+          <div class="form-group">
+            <label>Ingresar contraseña:</label>
+            <input type="password" class="form-control" name="password" />
+          </div>
+          <div>
+            <a href="/profile" class="btn btn-default"><span class="fa fa-check"></span> Aceptar</a>
+          </div>
+        </form>
+      </div>
+      <hr>
+      <h4><span class="fa fa-sign-in"> ¿Aun no tienes una cuenta?<a href="/signup"> Ingresar</a></span>
+      <p><span class="fa fa-home"> Ir a <a href="/">home</a></span></p></h4>
+    </div>
+  </body>
+</html>
